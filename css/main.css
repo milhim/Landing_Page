@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #EEEEEE;
+    margin-top: 8%;
+}
+/*Header styling*/
+.header {
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    padding: 1%;
+    grid-template-columns: 50% 50%;
+    position: fixed;
+    top: 0;
+    background-color: #EEEEEE;
+}
+
+
+.header img {
+    width: 50%;
+    justify-self: start;
+}
+
+.header .nav-bar {
+    justify-self: end;
+    padding: 1%;
+    width: 95%;
+}
+
+.header .nav-bar a {
+    margin-left: 18%;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+/*-----------form and h1 styling-----------*/
+
+.p-form{
+    width: 33%;
+    margin: auto;
+}
+.p-form p:first-child{
+    width: 100%;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3%;
+}
+.p-form form{
+    width: 80%;
+    margin: auto;
+}
+
+.p-form form input{
+    margin: auto;
+    display: block;
+    padding: 1%;
+    margin-top: 2%;
+}
+.p-form form input[type="email"]{
+    width: 80%;
+}
+.p-form form input[type="submit"]{
+    width: 45%;
+    background-color: #F1C40F;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    border: 1px #F1C40F;
+    cursor: pointer;
+}
+
+/*---------styling features section---------*/
+
+.features{
+    width: 70%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+
+}
+
+.features .section-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+.features .section-div .icon{
+    width: 10%;
+    align-self: center;
+}
+.features .section-div .icon i{
+    color: #FF8C00;
+}
+.features .section-div .text{
+    width: 80%;
+    align-self: center;
+}
+.features .section-div .text h2,p{
+    margin: 0;
+}
+/*-----------------how it works section---------------*/
+.how-it-works{
+    width:45%;
+    margin: auto;
+    margin-bottom: 3%;
+
+}
+.how-it-works iframe{
+    width: 100%;
+    height: 60%;
+    border: 1px;
+}
+/*----------styling prices-------------*/
+.pricing{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3%;
+}
+.pricing .pricing-div{
+    border: 0.5px solid black;
+    border-radius: 1%;
+    width: 30%;
+    text-align: center;
+}
+.pricing .pricing-div .p-pricing-div{
+    background-color: #DDDDDD;
+    padding: 2%;
+}
+.pricing .pricing-div p{
+    font-size: 24px;
+    font-weight: 400;
+}
+.pricing .pricing-div p:nth-child(2){
+    margin-top: 6%;
+
+}
+.pricing .pricing-div ul{
+    list-style: none;
+    width: 90%;
+}
+.pricing .pricing-div ul li{
+    margin: 5%;
+}
+.pricing .pricing-div button{
+    padding: 2%;
+    background-color: #F1C40F ;
+        border: 1px #F1C40F;
+    width: 35%;
+    font-size: 18px;
+    margin-bottom: 5%;
+        cursor: pointer;
+
+}
+/*-------------footer styling------------*/
+.footer{
+    width: 70%;
+    margin: auto;
+    background-color: #DDDDDD;
+    text-align: right;
+    padding: 1%
+}
+
+.footer .footer-links a{
+    margin-left: 2%;
+    text-decoration: none;
+    color: black;
+
+}
+.footer p{
+    font-size: 14px;
+    color: #555555;
+    
+}
+@media (max-width:700px) {
+    body{
+        margin-top: 32%;
+    }
+    /*Header styling*/
+
+    .header {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 55% 40%;
+    }
+    
+    
+    .header img {
+        margin-top: 13%;
+        width: 100%;
+        height: 50%;
+    }
+    
+    .header .nav-bar {
+        width: 100%;
+        margin-right: 10%;
+    }
+    
+    .header .nav-bar a {
+        font-size: 14px;
+        display: block;
+        text-align: right;
+        margin-left: 0;
+        padding: 5%;
+    }
+/*-----------form and h1 styling-----------*/
+
+    .p-form{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 10%;
+        
+    }
+    
+    .p-form form input[type="submit"]{
+        margin-top: 5%;
+        font-size: 12px;
+    }
+    /*---------styling features section---------*/
+    .features{
+        width: 95%;
+    }
+    .features .section-div .icon{
+        width: 25%;
+        align-self: flex-start;
+    }
+    .features .section-div .icon i{
+        font-size: 32px;
+    }
+    .features .section-div .text h2{
+        font-size: 18px;
+    }
+    .features .section-div .text p{
+        font-size: 14;
+    }
+    /*-----------------how it works section---------------*/
+.how-it-works{
+    width:80%;
+    height: 30%;
+    margin-bottom: 10%;
+}
+.how-it-works iframe{
+    width: 100%;
+    height: 100%;
+}
+/*----------styling prices-------------*/
+.pricing{
+    width: 90%;
+    margin-top: 5%;
+    flex-direction: column;
+}
+.pricing .pricing-div{
+    width: 95%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.footer{
+    width: 100%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
